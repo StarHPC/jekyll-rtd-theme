@@ -3,14 +3,28 @@
         <div class="title p-1">
             <i class="fa fa-book"></i> {{ site.title }}
         </div>
-        <div class="branch p-1">
+{% comment %}
+	<div class="branch p-1">
             <span class="name">
                 {{ docs.source.branch }}
             </span>
             <i class="fa fa-caret-down"></i>
         </div>
+{% endcomment %}
     </div>
     <div class="addons d-flex flex-column height-full p-2 d-none">
+        <div class="branch p-1">
+            <span class="name">
+                {{ docs.source.branch }}
+            </span>
+        </div>
+        <div class="p-1">
+          {{ __.revision | default: "Revision" }}
+          <a class="text-gray" href="{{ docs.repository_url }}/commit/{{ docs.build_revision }}" title="{{ docs.build_revision }}" rel="noreferrer" target="_blank">
+            {{- docs.build_revision | slice: 0, 7 -}}
+          </a>
+        </div>
+{% comment %}
         <dl>
             <dt>{{ __.github | default: "GitHub" }}</dt>
             <dd>
@@ -24,7 +38,7 @@
                     <i class="fa fa-question-circle-o"></i>
                     {{ __.issues | default: "Issues" }}
                 </a>
-            </dd>
+	    </dd>
             <dd>
                 <a href="{{ docs.zip_url }}" title="{{ __.size | default: 'Size' }}: {{ rest.size }} Kb">
                     <i class="fa fa-download"></i>
@@ -39,5 +53,6 @@
             is under the terms of
             <a href="{{ docs.repository_url }}">{{ docs.license.name | default: "The Unlicense" }}</a>.
         </div>
+{% endcomment %}
     </div>
 </div>
