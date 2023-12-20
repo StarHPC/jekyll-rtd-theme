@@ -20,7 +20,7 @@
     "@babel/preset-env": "^7.12.1",
     "babel-loader": "^8.2.1",
     "css-loader": "^5.0.1",
-    "lighthouse": "^6.4.1",
+    "lighthouse": "^11.4.0",
     "mini-css-extract-plugin": "^1.2.1",
     "prettier": "^2.1.2",
     "sass": "^1.29.0",
