@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-rtd-theme"
-  spec.version       = "2.0.10"
+  spec.version       = "2.0.11.ar"
   spec.authors       = ["saowang"]
   spec.email         = ["saowang@outlook.com"]
 
@@ -10,5 +10,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.add_runtime_dependency "github-pages", "~> 209"
+  spec.add_runtime_dependency "github-pages", "~> 232"
 end
