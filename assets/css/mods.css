@@ -1,5 +1,6 @@
 /* this part adds an icon after external links, using FontAwesome*/
-a[href^="http://"]:after, a[href^="https://"]:after {
+.markdown-body a[href^="http://"]:after,
+.markdown-body a[href^="https://"]:after {
     content: "\f08e";
     /* content: "\f14c"; */
     font-family: FontAwesome;

@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-rtd-theme"
-  spec.version       = "2.0.12"
+  spec.version       = "2.0.13"
   spec.authors       = ["StarHPC"]
   spec.email         = ["starhpc@hofstra.edu"]
 
